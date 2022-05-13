@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   justify-content: center;
   background-color: black;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
 
   align-items: center;
   font-size: 1rem;
