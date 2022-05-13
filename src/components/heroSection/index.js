@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   HeroContainer,
   HeroBg,
@@ -11,9 +11,15 @@ import {
   ArrowRight,
 } from "./HeroElements";
 import Video from "../../video/bgVideo.mp4";
-import { Button } from "bootstrap";
+import { Button } from "../ButtonElement";
 
 function HeroSection() {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover);
+  };
+
   return (
     <HeroContainer>
       <HeroBg>
@@ -25,7 +31,13 @@ function HeroSection() {
           Iratkozz fel lorem lorem lorem lorem asdmo lsda ipsum sum dolor amer
         </HeroP>
         <HeroBtnWrap>
-          <Button to="signup">
+          <Button
+            to="signup"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrap>
