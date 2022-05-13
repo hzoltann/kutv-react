@@ -4,7 +4,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
 
-  @media screen and (max-width: 768px;) {
+  @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
@@ -29,7 +29,7 @@ export const InfoRow = styled.div`
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? "'col2 col1'" : "'col1 col2'"};
 
-  @media screen and (max-width: 768px;) {
+  @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? "'col1' 'col2'" : "'col1 col1' 'col2 col2'"};
   }
@@ -68,7 +68,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8f1" : "010606")};
+  color: ${({ lightText }) => (lightText ? "#f7f8f1" : "#010606")};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
