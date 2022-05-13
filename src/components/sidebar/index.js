@@ -10,21 +10,31 @@ import {
   SideBarMenu,
 } from "./SideBarElements";
 
-function SideBar() {
+function SideBar({ isOpen, toggle }) {
   return (
-    <SideBarContainer>
-      <Icon>
+    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SideBarWrap>
         <SideBarMenu>
-          <SideBarLink to="about">About</SideBarLink>
-          <SideBarLink to="versenyszabaly">Versenyszabaly</SideBarLink>
-          <SideBarLink to="hirek">Hirek</SideBarLink>
-          <SideBarLink to="gyik">GYIK</SideBarLink>
+          <SideBarLink to="about" onClick={toggle}>
+            About
+          </SideBarLink>
+          <SideBarLink to="versenyszabaly" onClick={toggle}>
+            Versenyszabaly
+          </SideBarLink>
+          <SideBarLink to="hirek" onClick={toggle}>
+            Hirek
+          </SideBarLink>
+          <SideBarLink to="gyik" onClick={toggle}>
+            GYIK
+          </SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
-          <SideBarRoute to="./signin">Iratkozz Fel</SideBarRoute>
+          <SideBarRoute to="./signin" onClick={toggle}>
+            Iratkozz Fel
+          </SideBarRoute>
         </SideBtnWrap>
       </SideBarWrap>
     </SideBarContainer>

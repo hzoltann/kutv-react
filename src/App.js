@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./components/navbar";
 import { BrowserRouter as Router } from "react-router-dom";
-import SideBar from "./components/sidebar";
+import Home from "./pages";
 
 function App() {
   return (
     <Router>
-      <NavBar />
-      <SideBar />
+      <Home />
     </Router>
   );
 }

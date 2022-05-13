@@ -12,13 +12,13 @@ import {
   NavBtnLink,
 } from "./NavBarElements";
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavBarContainer>
           <NavLogo to="#">KUTV</NavLogo>
-          <HamburgerIcon>
+          <HamburgerIcon onClick={toggle}>
             <FaBars />
           </HamburgerIcon>
           <NavMenu>
@@ -33,9 +33,6 @@ const NavBar = () => {
             </NavItem>
             <NavItem>
               <NavLinks to="gyik">GYIK</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks to="feliratkozas">Feliratkozas</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
