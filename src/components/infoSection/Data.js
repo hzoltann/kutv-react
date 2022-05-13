@@ -17,7 +17,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: "versemyszabaly",
+  id: "versenyszabaly",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
@@ -35,7 +35,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "about",
+  id: "hirek",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -46,7 +46,7 @@ export const homeObjThree = {
   buttonLabel: "Get started",
   imgStart: true,
   img: require("../../img/sign-up.svg"),
-  alt: "Car",
+  alt: "feliratkozo papir",
   dark: true,
   primary: true,
   darkText: false,
