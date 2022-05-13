@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -7,9 +8,20 @@ import {
   FooterLinkTitle,
   FooterLinksContainer,
   FooterLinksWrapper,
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
+  SocialMedia,
+  SocialMediaWrap,
+  WebsiteRights,
 } from "./FooterElements";
+import { animateScroll as scroll } from "react-scroll/modules";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -51,6 +63,28 @@ const Footer = () => {
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialLogo to="/" onClick={toggleHome}>
+              {" "}
+              Kutv1
+            </SocialLogo>
+
+            <WebsiteRights>KUTV (C) {new Date().getFullYear()}</WebsiteRights>
+            <SocialIcons>
+              <SocialIconLink href="//www.facebook.com" target="_blank">
+                <FaFacebook />
+              </SocialIconLink>
+              {/* Tedd be a href eket ide kesobb */}
+              <SocialIconLink target="_blank">
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink target="_blank">
+                <FaTwitter />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
       </FooterWrap>
     </FooterContainer>
   );

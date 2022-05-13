@@ -5,7 +5,7 @@ import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
 
@@ -81,7 +81,7 @@ export const NavLinks = styled(LinkScroll)`
   padding: 0 1rem;
   height: 100%;
 
-  &:active {
+  &.active {
     border-bottom: 3px solid #01fb71;
   }
 `;
