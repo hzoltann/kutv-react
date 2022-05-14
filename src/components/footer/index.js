@@ -28,38 +28,10 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signing">How it works</FooterLink>
-              <FooterLink to="/signing">Testimonials</FooterLink>
-              <FooterLink to="/signing">Careers</FooterLink>
-              <FooterLink to="/signing">Investors</FooterLink>
-              <FooterLink to="/signing">Terms of valami</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signing">How it works</FooterLink>
-              <FooterLink to="/signing">Testimonials</FooterLink>
-              <FooterLink to="/signing">Careers</FooterLink>
-              <FooterLink to="/signing">Investors</FooterLink>
-              <FooterLink to="/signing">Terms of valami</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signing">How it works</FooterLink>
-              <FooterLink to="/signing">Testimonials</FooterLink>
-              <FooterLink to="/signing">Careers</FooterLink>
-              <FooterLink to="/signing">Investors</FooterLink>
-              <FooterLink to="/signing">Terms of valami</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signing">How it works</FooterLink>
-              <FooterLink to="/signing">Testimonials</FooterLink>
-              <FooterLink to="/signing">Careers</FooterLink>
-              <FooterLink to="/signing">Investors</FooterLink>
-              <FooterLink to="/signing">Terms of valami</FooterLink>
+              <FooterLinkTitle>Szervezők</FooterLinkTitle>
+              <FooterLink to="/">FSEGA</FooterLink>
+              <FooterLink to="/">Universitatea Babeș-Bolyai</FooterLink>
+              <FooterLink to="/">KŰTV</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -67,19 +39,27 @@ const Footer = () => {
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
               {" "}
-              Kutv1
+              KŰTV
             </SocialLogo>
 
-            <WebsiteRights>KUTV (C) {new Date().getFullYear()}</WebsiteRights>
+            <WebsiteRights>
+              Készitette Hüvelyes Zoltán {new Date().getFullYear()}
+            </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="//www.facebook.com" target="_blank">
+              <SocialIconLink href="//www.facebook.com/FSEGA" target="_blank">
                 <FaFacebook />
               </SocialIconLink>
               {/* Tedd be a href eket ide kesobb */}
-              <SocialIconLink target="_blank">
+              <SocialIconLink
+                href="//www.instagram.com/bbte.kozgaz/?hl=en"
+                target="_blank"
+              >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink target="_blank">
+              <SocialIconLink
+                href="//twitter.com/ubbfsega?lang=en"
+                target="_blank"
+              >
                 <FaTwitter />
               </SocialIconLink>
             </SocialIcons>

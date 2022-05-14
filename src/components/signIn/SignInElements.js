@@ -7,6 +7,7 @@ export const Container = styled.div`
   bottom: 0;
   left: 0;
   top: 0;
+  right: 0;
   z-index: 0;
   overflow: hidden;
   background: linear-gradient(
@@ -34,6 +35,7 @@ export const Icon = styled(Link)`
   color: #fff;
   font-weight: 600;
   font-size: 32px;
+  overflow: hidden;
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;
@@ -88,9 +90,10 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 `;
 
-export const FormButton = styled.button`
+export const FormButton = styled(Link)`
   background: #01bf71;
   padding: 16px 0;
   border: none;
@@ -98,11 +101,33 @@ export const FormButton = styled.button`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: #fff;
+    color: #01bf71;
+  }
 `;
 
-export const Text = styled.span`
+export const Text = styled(Link)`
   text-align: center;
   margin-top: 24px;
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
+  background-color: #01bf71;
+  width: 150px;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #fff;
+    color: #01bf71;
+  }
 `;

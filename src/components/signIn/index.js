@@ -26,8 +26,10 @@ const SignIn = () => {
               <FormLabel htmlFor="for">Password</FormLabel>
               <FormInput type="password" reqired></FormInput>
               <FormLabel htmlFor="for">Continue</FormLabel>
-              <FormInput type="submit" reqired></FormInput>
-              <Text>Forgot password</Text>
+              <FormButton type="submit" reqired to="/">
+                Fel Iratkozás
+              </FormButton>
+              <Text to="/">Forgot password</Text>
             </Form>
           </FormContent>
         </FormWrap>
