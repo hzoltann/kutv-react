@@ -103,3 +103,32 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const HeroTimerWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15vh;
+  background-color: #000;
+`;
+
+export const HeroTimer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 14vh;
+  align-items: center;
+  font-size: 48px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+  }
+`;

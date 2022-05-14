@@ -11,7 +11,7 @@ export const Button = styled(LinkScroll)`
   outline: none;
   border: none;
   cursor: pointer;
-  display: flex;
+  display: ${({ showBtn }) => (showBtn ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   transition: all ease-in-out 0.3s;

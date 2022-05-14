@@ -9,10 +9,12 @@ import {
   HeroP,
   ArrowForward,
   ArrowRight,
+  HeroTimer,
+  HeroTimerWrap,
 } from "./HeroElements";
 import Video from "../../video/bgVideo.mp4";
 import { Button } from "../ButtonElement";
-
+import Timer from "./Timer";
 function HeroSection() {
   const [hover, setHover] = useState(false);
 
@@ -38,10 +40,16 @@ function HeroSection() {
             primary="true"
             dark="true"
           >
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Iratkozz fel {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrap>
       </HeroContent>
+      <HeroTimerWrap>
+        <HeroTimer>
+          {/* Majus 20 ig 10 ora https://www.epochconverter.com/ */}
+          <Timer countDownTimestampMs={1653030000000} />
+        </HeroTimer>
+      </HeroTimerWrap>
     </HeroContainer>
   );
 }

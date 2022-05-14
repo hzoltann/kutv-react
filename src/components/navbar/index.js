@@ -51,7 +51,7 @@ const NavBar = ({ toggle }) => {
                 offset={-80}
                 activeClass="active"
               >
-                About
+                Versenyről
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -81,11 +81,21 @@ const NavBar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="gyik">GYIK</NavLinks>
+              <NavLinks
+                to="gyik"
+                smooth={true}
+                duration={600}
+                spy={true}
+                exact="true"
+                offset={-80}
+                activeClass="active"
+              >
+                GYIK
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/signin">Iratkozz fel</NavBtnLink>
           </NavBtn>
         </NavBarContainer>
       </Nav>

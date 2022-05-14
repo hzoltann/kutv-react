@@ -6,7 +6,7 @@ export const NewsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: #fff;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -21,14 +21,15 @@ export const NewsWrap = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;
   overflow: hidden;
+  /* transform: scale(1.2); */
 
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media screen and (max-width: 768px) {
@@ -38,7 +39,7 @@ export const NewsWrap = styled.div`
 `;
 
 export const NewsCard = styled.div`
-  background-color: #fff;
+  background-color: #010606;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -56,6 +57,10 @@ export const NewsCard = styled.div`
     transition: all ease-in-out 0.2s;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    transform: scale(0.8);
+  }
 `;
 
 export const NewsIcon = styled.img`
@@ -66,7 +71,7 @@ export const NewsIcon = styled.img`
 
 export const NewsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: #010606;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -77,9 +82,12 @@ export const NewsH1 = styled.h1`
 export const NewsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
 `;
 
 export const NewsP = styled.p`
   font-size: 1rem;
   text-align: center;
+  color: #01fb71;
 `;

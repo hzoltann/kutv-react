@@ -29,6 +29,10 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
+  description2,
+  description3,
+  description4,
+  showBtn,
 }) => {
   return (
     <>
@@ -40,6 +44,10 @@ const InfoSection = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>{description2}</Subtitle>
+                <Subtitle darkText={darkText}>{description3}</Subtitle>
+                <Subtitle darkText={darkText}>{description4}</Subtitle>
+
                 <BtnWrap>
                   <Button
                     to="home"
@@ -51,6 +59,7 @@ const InfoSection = ({
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark ? 1 : 0}
+                    showBtn={showBtn ? 1 : 0}
                   >
                     {buttonLabel}
                   </Button>

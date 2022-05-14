@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Faq from "../components/faq";
 import Footer from "../components/footer";
 import HeroSection from "../components/heroSection";
 import InfoSection from "../components/infoSection";
@@ -22,10 +23,11 @@ function Home() {
       <SideBar isOpen={isOpen} toggle={toggle} />
       <NavBar toggle={toggle} />
       <HeroSection />
+
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <News />
-      <InfoSection {...homeObjThree} />
+      <Faq />
       <Footer />
     </>
   );

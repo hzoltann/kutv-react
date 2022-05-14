@@ -28,6 +28,7 @@ export const InfoRow = styled.div`
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? "'col2 col1'" : "'col1 col2'"};
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -61,7 +62,7 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  /* overflow: hidden; */
+  overflow: hidden;
 `;
 
 export const Heading = styled.h1`
@@ -70,7 +71,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8f1" : "#010606")};
-  /* overflow: hidden; */
+  overflow: hidden;
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -88,6 +89,7 @@ export const Subtitle = styled.p`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
+  /* display: none; */
 `;
 
 export const ImgWrap = styled.div`

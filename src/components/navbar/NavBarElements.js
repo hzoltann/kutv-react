@@ -7,13 +7,15 @@ export const Nav = styled.nav`
   justify-content: center;
   background-color: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
-  margin-top: -80px;
+  /* margin-top: -80px; */
 
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  width: 100%;
+  z-index: 100000;
+  /* overflow: hidden; */
 
   @media screen and(max-width:960px) {
     transition: all ease-in-out 0.6s;
@@ -63,6 +65,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   text-align: center;
   margin-right: -22px;
+  /* overflow: hidden; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -71,6 +74,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  overflow: hidden;
 `;
 export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
