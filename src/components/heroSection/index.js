@@ -29,9 +29,7 @@ function HeroSection() {
       </HeroBg>
       <HeroContent>
         <HeroH1>XIV. KÖZÉPISKOLÁSOK ÜZLETI TANÁCSADÓ VERSENYE</HeroH1>
-        <HeroP>
-          Iratkozz fel lorem lorem lorem lorem asdmo lsda ipsum sum dolor amer
-        </HeroP>
+        <HeroP>Iratkozz fel IRJAL VALAMIT</HeroP>
         <HeroBtnWrap>
           <Button
             to="signup"
@@ -39,6 +37,7 @@ function HeroSection() {
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            showBtn={true}
           >
             Iratkozz fel {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

@@ -35,7 +35,7 @@ const NavBar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavBarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            KUTV
+            KÜTV
           </NavLogo>
           <HamburgerIcon onClick={toggle}>
             <FaBars />
@@ -64,7 +64,7 @@ const NavBar = ({ toggle }) => {
                 offset={-80}
                 activeClass="active"
               >
-                Versenyszabaly
+                Versenyszabály
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -77,7 +77,7 @@ const NavBar = ({ toggle }) => {
                 offset={-80}
                 activeClass="active"
               >
-                Hirek
+                Hírek
               </NavLinks>
             </NavItem>
             <NavItem>
