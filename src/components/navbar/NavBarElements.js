@@ -88,6 +88,11 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #01fb71;
   }
+
+  &:hover {
+    transition: all ease-in-out 0.3s;
+    color: #01bf71;
+  }
 `;
 
 export const NavBtn = styled.nav`

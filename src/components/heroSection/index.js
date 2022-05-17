@@ -29,10 +29,10 @@ function HeroSection() {
       </HeroBg>
       <HeroContent>
         <HeroH1>XIV. KÖZÉPISKOLÁSOK ÜZLETI TANÁCSADÓ VERSENYE</HeroH1>
-        <HeroP>Iratkozz fel IRJAL VALAMIT</HeroP>
+        <HeroP>Iratkozz fel egészen május 18.-ig</HeroP>
         <HeroBtnWrap>
           <Button
-            to="signup"
+            to="signIn"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"

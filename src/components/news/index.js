@@ -16,7 +16,7 @@ import Icon3 from "../../img/fordulo.svg";
 const News = () => {
   return (
     <NewsContainer id="hirek">
-      <NewsH1>Fő hirek</NewsH1>
+      <NewsH1>Fő hírek</NewsH1>
       <NewsWrap>
         <NewsCard>
           <NewsIcon src={Icon1} />

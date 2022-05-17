@@ -55,6 +55,8 @@ export const TextWrap = styled.div`
 `;
 
 export const TopLine = styled.p`
+  /* border: 2px solid red; */
+  padding-top: 3px;
   color: #01bf71;
   font-size: 16px;
   line-height: 16px;
@@ -63,6 +65,10 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 38px;
+  }
 `;
 
 export const Heading = styled.h1`

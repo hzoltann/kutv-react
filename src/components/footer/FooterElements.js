@@ -104,8 +104,8 @@ export const SocialLogo = styled(Link)`
   transition: all ease-in-out 0.3s;
 
   &:hover {
-    color: #01fb71;
-    border: 2px solid #01fb71;
+    color: #01bf71;
+    border: 2px solid #01bf71;
   }
 `;
 

@@ -17,19 +17,19 @@ const SignIn = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">Kutv</Icon>
+          <Icon to="/">Kütv</Icon>
           <FormContent>
             <Form action="#">
-              <FormH1>Sign in to your account</FormH1>
+              <FormH1>Jelentkezz be / hozz létre új fiókot</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" reqired></FormInput>
               <FormLabel htmlFor="for">Password</FormLabel>
               <FormInput type="password" reqired></FormInput>
-              <FormLabel htmlFor="for">Continue</FormLabel>
+              <FormLabel htmlFor="for">Folyatatás</FormLabel>
               <FormButton type="submit" reqired to="/">
-                Fel Iratkozás
+                Feliratkozás
               </FormButton>
-              <Text to="/">Forgot password</Text>
+              <Text to="/">Elfelejtettem a jelszavam</Text>
             </Form>
           </FormContent>
         </FormWrap>

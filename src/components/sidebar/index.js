@@ -19,13 +19,13 @@ function SideBar({ isOpen, toggle }) {
       <SideBarWrap>
         <SideBarMenu>
           <SideBarLink to="about" onClick={toggle}>
-            About
+            Versenyről
           </SideBarLink>
           <SideBarLink to="versenyszabaly" onClick={toggle}>
-            Versenyszabaly
+            Versenyszabály
           </SideBarLink>
           <SideBarLink to="hirek" onClick={toggle}>
-            Hirek
+            Hírek
           </SideBarLink>
           <SideBarLink to="gyik" onClick={toggle}>
             GYIK
