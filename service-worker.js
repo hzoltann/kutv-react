@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kutv-react/precache-manifest.71998dad920fe80ba3ef1cc7d9eb6cff.js"
+  "/kutv-react/precache-manifest.4f1878365702731ef64a2d96f6e757d8.js"
 );
 
 workbox.clientsClaim();
