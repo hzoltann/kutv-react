@@ -2,4 +2,6 @@
 
 # This is a project for college
 
-# I had to create a mimic website
+# To run this project you need to use Node.js
+
+# to start type in the terminal: npm start / yarn start
