@@ -29,9 +29,15 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Szervezők</FooterLinkTitle>
-              <FooterLink to="/">FSEGA</FooterLink>
-              <FooterLink to="/">Universitatea Babeș-Bolyai</FooterLink>
-              <FooterLink to="/">KŰTV</FooterLink>
+              <FooterLink to="//hu.econ.ubbcluj.ro/" target="_blank">
+                FSEGA
+              </FooterLink>
+              <FooterLink to="//www.ubbcluj.ro/hu/" target="_blank">
+                Universitatea Babeș-Bolyai
+              </FooterLink>
+              <FooterLink to="//hu.econ.ubbcluj.ro/kutv/" target="_blank">
+                KŰTV
+              </FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

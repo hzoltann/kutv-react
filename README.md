@@ -4,4 +4,8 @@
 
 # To run this project you need to use Node.js
 
-# To start type in the terminal: npm start / yarn start
+# 1. cd to the project directory: npm install
+
+# 2. run: npm start
+
+# 3. Done

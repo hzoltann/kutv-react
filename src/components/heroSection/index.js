@@ -45,8 +45,8 @@ function HeroSection() {
       </HeroContent>
       <HeroTimerWrap>
         <HeroTimer>
-          {/* Majus 20 ig 10 ora https://www.epochconverter.com/ */}
-          <Timer countDownTimestampMs={1653030000000} />
+          {/* Majus 30 ig 10 ora https://www.epochconverter.com/ */}
+          <Timer countDownTimestampMs={1653904800000} />
         </HeroTimer>
       </HeroTimerWrap>
     </HeroContainer>
